@@ -223,11 +223,3 @@ footer a:visited{
 	background-color: orange;
 
 }
-
-@media screen and (min-width: 992px) {
-  body {
-    
-		transform: scale(.5);
-
-  }
-}

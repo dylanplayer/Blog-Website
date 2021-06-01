@@ -21,7 +21,6 @@ def addNewPost(tempNumberOfPosts, title, author, content, postDate):
 
 @app.route('/')
 def index():
-	print(db.keys())
 	return render_template("index.html", posts = getPosts(int(db["numberOfPosts"])))
 
 @app.route('/new')
