@@ -1,0 +1,28 @@
+
+
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+
+<div id="feed">
+
+	
+	<h1>Feed</h1>
+	<br>
+
+
+	{% for post in posts %}
+		<div id="blog_posts_container">
+
+				<h2 id="blog_post_title">{{post[0]}}</h2>
+				<p id="blog_post_author">by {{post[1]}}</p>
+				<p id="blog_post_content">{{post[2]}}</p>
+				<p id="blog_post_author">{{post[3]}}</p>
+
+		</div>
+	{% endfor %}
+
+
+</div>
+
+{% endblock %}

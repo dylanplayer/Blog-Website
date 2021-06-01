@@ -1,0 +1,43 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>{% block title %}{% endblock %}</title>
+
+		<link href="/static/style.css" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<div class="container">
+
+			<header>
+
+				<a href="/">
+					<img src="https://www.pinclipart.com/picdir/big/3-38139_blogger-blog-logo-png-transparent-background-clipart.png" alt="Website Logo" id="header_logo">
+				</a>
+				<nav id="navigation_bar">
+
+					<a href="/">Feed</a>
+					<a href="/new">New</a>
+
+				</nav>
+
+			</header>
+
+			{% block body %}
+			{% endblock %}
+
+			<footer id="footer">
+				<div id="copyright_container">
+					<a id="footer_copyright" href="https://www.dylanplayer.com" target="blank">© 2021 Dylan Player</a>
+				</div>
+			<footer>
+
+		</div>
+
+	</body>
+
+</html>

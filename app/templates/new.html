@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}New Post{% endblock %}
+{% block body %}
+
+<div id="new_post">
+
+	
+	<h1>New Post</h1>
+	<br>
+
+	<form id="new_post_form" action="/create" method="post">
+
+		<fieldset id="new_post_fieldset">
+
+			<div class="formfield">
+				<label for="title">Title</label>
+				<input name="title" type="text" maxlength="80">
+			</div>
+
+			<div class="formfield">
+				<label for="author">Author</label>
+				<input name="author" type="text" maxlength="100">
+			</div>
+
+			<div class="formfield">
+				<label for="content">Content</label>
+				<textarea name="content" id="content"></textarea>
+			</div>
+
+			<input name="submit" type="submit" id="new_form_submit_button" value="Publish">
+		
+		</fieldset>
+
+	</form>
+
+</div>
+
+{% endblock %}

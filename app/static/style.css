@@ -1,0 +1,233 @@
+
+body{
+
+	font-family: Courier New;
+	margin: 5px;
+	background-color: black;
+	text-align: center;
+
+}
+
+header{
+
+	display: inline-block;
+	height: 20vh;
+	text-align: center;
+
+}
+
+header img {
+	width: 20vw;
+	height: auto;
+	margin: 2vw;
+}
+
+header img:hover{
+
+	cursor: pointer;
+	transform: scale(1.05);
+
+}
+
+header nav {
+	font-size: 6vw;
+	margin: 2vw;
+}
+
+header nav a {
+
+	margin-bottom: 1vh;
+	margin-right: 2vw;
+	margin-left: 2vw;
+  
+}
+
+header nav a:hover {
+
+	transform: scale(1.05);
+  
+}
+
+header nav a:visited {
+
+	color: orange;
+
+}
+
+
+h1, h2, h3, h4, h5, h6{
+
+	color: orange;
+
+}
+
+h1{
+
+	font-size: 15vw;
+
+}
+
+h2{
+
+	font-size: 10vw;
+
+}
+
+h3{
+
+	font-size: 8vw;
+
+}
+
+a{
+
+	color: orange;
+	text-decoration: none;
+	font-size: 8vw;
+
+}
+
+a:visited{
+
+	color: darkorange;
+
+}
+
+p{
+
+	color: white;
+	font-size: 8vw;
+
+}
+
+label{
+
+	color: orange;
+	font-family: Courier New;
+	font-size: 20px;
+
+}
+
+input{
+
+	border: 1px solid orange;
+	background-color: black;
+	font-family: Courier New;
+	font-size: 20px;
+	border-radius: 20px;
+	width: 50%;
+	color: orange;
+	padding: 5px;
+	
+}
+
+#new_form_submit_button{
+
+	color: orange;
+	
+
+}
+
+fieldset{
+
+	border: 2px solid orange;
+	text-align: center;
+	width: 80vw;
+	margin: auto;
+	
+}
+
+textarea{
+
+	border: 1px solid orange;
+	background-color: black;
+	font-family: Courier New;
+	font-size: 20px;
+	border-radius: 20px;
+	width: 50%;
+	height: 30vh;
+	color: orange;
+	resize: auto;
+	padding: 5px;
+	
+
+}
+
+.formfield * {
+  vertical-align: middle;
+	margin: 10px;
+}
+
+#new_post, #feed{
+
+	text-align: center;
+	margin: auto;
+
+}
+
+
+#blog_post_title{
+
+	color: orange;
+	margin: 2px;
+	font-size: 5vw;
+
+}
+
+#blog_post_author{
+
+	color: orange;
+	margin: 2px;
+	font-size: 4vw;
+
+}
+
+#blog_post_content{
+
+	color: orange;
+	font-size: 3vw;
+
+}
+
+#blog_posts_container{
+
+	border: 2px solid orange;
+	padding: .5vh;
+	border-radius: 20px;
+	width: 80vw;
+	text-align: center;
+	transform: translateX(9.5vw);
+	margin-bottom: 1vh;
+
+}
+
+
+footer a, footer p{
+
+	color: black;
+
+}
+
+footer a:visited{
+
+	color: black;
+
+}
+
+#copyright_container{
+
+	padding: 5vh;
+	height: 10vh;
+	margin-top: 10vh;
+	border: 2px solid orange;
+	background-color: orange;
+
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    
+		transform: scale(.5);
+
+  }
+}
