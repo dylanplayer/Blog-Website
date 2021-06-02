@@ -7,7 +7,7 @@ from replit import db
 
 def getPosts(tempNumberOfPosts):
 	temp_posts = []
-	for x in range(1,tempNumberOfPosts+1):
+	for x in reversed(range(1,tempNumberOfPosts+1)):
 		temp_posts.append([db["post#"+str(x)+"title"], db["post#"+str(x)+"author"], db["post#"+str(x)+"content"], db["post#"+str(x)+"date"]])
 	return temp_posts
 
