@@ -38,3 +38,41 @@ def create():
 	return redirect("/")
 
 
+@app.route('/login')
+def login():
+	return render_template("login.html")
+
+@app.route('/admin')
+def admin():
+	return render_template("admin.html")
+
+@app.route('/submit', methods = ['POST'])
+def submit():
+	username = request.form['username']
+	password = request.form['password']
+	
+	if(username == 'admin' and password == 'admin123'):
+		return render_template('admin.html', isAdmin = "true")
+	else:
+		return render_template('login.html', invalidCredentials = 'true')
+
+@app.errorhandler(404)
+def page_not_found(e):
+  return render_template('404.html'),404
+
+@app.errorhandler(405)
+def method_not_found(e):
+  return render_template('405.html'),405
+
+@app.route('/delete_posts', methods=['POST'])
+def deletePosts():
+	print(db.keys())
+	for x in range(1,int(db["numberOfPosts"])+1):
+		del db["post#"+str(x)+"title"]
+		del db["post#"+str(x)+"author"]
+		del db["post#"+str(x)+"content"]
+		del db["post#"+str(x)+"date"]
+	db["numberOfPosts"] = 0
+	return redirect("/")
+
+

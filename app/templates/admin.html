@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Admin{% endblock %}
+{% block body %}
+
+{% if isAdmin == 'true' %}
+<div>
+	<h1>Welcome, Admin</h1>
+
+	<form action="/delete_posts" method="post">
+
+		<input type="submit" name="delete_button" value="Delete All Posts">
+
+	</form>
+</div>
+{% else %}
+
+<div>
+	<a href="/">It seems you aren't in the right place click here to go home</a>
+</div>
+
+{% endif %}
+
+{% endblock %}

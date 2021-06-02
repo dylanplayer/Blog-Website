@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block body %}
+
+<div id="login_container">
+
+	<h1>Login</h1>
+	{% if invalidCredentials == 'true' %}
+		<p style="color:red; font-size:16px;">Invalid Login</p>
+	{% endif %}
+
+	<form action="/submit" method="post">
+		<fieldset>
+			<div class="formfield">
+				<label for="username">Username</label>
+				<input type="text" name="username" id="username_login_field">
+			</div>
+
+			<div class="formfield">
+				<label for="password">Password</label>
+				<input type="text" name="password" id="password_login_field">
+			</div>
+
+			<input type="submit" name="submit" value="login" id="login_button">
+		</fieldset>
+	</form>
+
+</div>
+
+{% endblock %}
